@@ -9,14 +9,14 @@ export default function Splash() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className={loading ? styles.splash : styles.hide}>
-      <p className={styles.loadingText}>Welcome to my universe</p>
+      <div className={styles.loadingText}>Toko-dev</div>
     </div>
   );
 }
